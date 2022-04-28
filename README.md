@@ -11,6 +11,7 @@ exos_conn = xmc_api.Connection(
 )
 
 switch_list = exos_conn.switch_list_create('PNW')
+```
 
 ##### Outputs
 Will generate a list of dictionaries
