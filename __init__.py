@@ -1,5 +1,4 @@
 import requests
-import xmltodict
 from getpass import getpass
 
 
@@ -18,6 +17,7 @@ class Connection(object):
         self.user = user
         self.pwd = pwd
 
+
     def requesting(self, query) -> requests:
         '''
         Submits get request to the XMC server.
@@ -26,6 +26,7 @@ class Connection(object):
         get_query = {
             'query': query
         }
+
         return requests.get(self.url, auth=(self.user, self.pwd), params=get_query)
 
 
